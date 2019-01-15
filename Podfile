@@ -8,8 +8,9 @@ target 'BirdDriver' do
     pod 'MarqueeLabel', '~> 3.0.1'
     pod 'IQKeyboardManager', '~> 5.0.6’
     pod 'Bugly'
-    pod ‘BaiduMobStatCodeless'
+    pod 'BaiduMobStatCodeless'
     pod 'SocketRocket'
     pod 'AFNetworking','~> 2.5.0'
     pod 'SDCycleScrollView'
+    pod 'MJRefresh', '~> 3.1.15.7'
 end

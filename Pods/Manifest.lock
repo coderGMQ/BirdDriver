@@ -27,6 +27,7 @@ PODS:
     - MarqueeLabel/ObjC (= 3.0.5)
   - MarqueeLabel/ObjC (3.0.5)
   - Masonry (1.0.2)
+  - MJRefresh (3.1.15.7)
   - SDCycleScrollView (1.65):
     - SDWebImage (~> 3.7)
   - SDWebImage (3.8.2):
@@ -42,6 +43,7 @@ DEPENDENCIES:
   - IQKeyboardManager (~> 5.0.6)
   - MarqueeLabel (~> 3.0.1)
   - Masonry (~> 1.0.2)
+  - MJRefresh (~> 3.1.15.7)
   - SDCycleScrollView
   - SDWebImage (~> 3.8)
   - SocketRocket
@@ -55,6 +57,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - MarqueeLabel
     - Masonry
+    - MJRefresh
     - SDCycleScrollView
     - SDWebImage
     - SocketRocket
@@ -63,15 +66,16 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
   BaiduMobStatCodeless: 94cc1728a663b51a252a21b528027a56d0df717a
-  Bugly: 00c8701f2bebab4887771ba43afbf51334009742
+  Bugly: 3ca9f255c01025582df26f9222893b383c7e4b4e
   IQKeyboardManager: 077b7f691dfa9d69db9cff66f2bed68ebfc02d9b
   MarqueeLabel: 8a25b2cf02cf52165022f01369e63536c58fcc00
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
   SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
   TZImagePickerController: 276dc7c0cc70da9ee354046474b405d87ef81c89
 
-PODFILE CHECKSUM: 79c1fb786ff3c19aada5f8edd4a6e58f30f3bbf3
+PODFILE CHECKSUM: 50cb2a70f2db9b63409a974e8404aba418fd6328
 
 COCOAPODS: 1.5.3

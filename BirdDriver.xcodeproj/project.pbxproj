@@ -114,6 +114,7 @@
 		908EF25121E715A100AA6FD8 /* BDCarInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 908EF24F21E715A100AA6FD8 /* BDCarInfoViewController.xib */; };
 		90FD749221E490AC00BD81ED /* BDHomeTopBean.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD749121E490AC00BD81ED /* BDHomeTopBean.m */; };
 		90FD749521E4BB6200BD81ED /* BDSubscribeSourceView.m in Sources */ = {isa = PBXBuildFile; fileRef = 90FD749421E4BB6200BD81ED /* BDSubscribeSourceView.m */; };
+		9278ED7C21EDC6FA00CA52C0 /* BDGifRefreshHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9278ED7B21EDC6FA00CA52C0 /* BDGifRefreshHeadView.m */; };
 		E14A42FC5D054D0066CCF2DA /* libPods-BirdDriver.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A55E58FB274A9820C1ED8BC4 /* libPods-BirdDriver.a */; };
 /* End PBXBuildFile section */
 
@@ -345,6 +346,8 @@
 		90FD749121E490AC00BD81ED /* BDHomeTopBean.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDHomeTopBean.m; sourceTree = "<group>"; };
 		90FD749321E4BB6200BD81ED /* BDSubscribeSourceView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDSubscribeSourceView.h; sourceTree = "<group>"; };
 		90FD749421E4BB6200BD81ED /* BDSubscribeSourceView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDSubscribeSourceView.m; sourceTree = "<group>"; };
+		9278ED7A21EDC6FA00CA52C0 /* BDGifRefreshHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BDGifRefreshHeadView.h; sourceTree = "<group>"; };
+		9278ED7B21EDC6FA00CA52C0 /* BDGifRefreshHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BDGifRefreshHeadView.m; sourceTree = "<group>"; };
 		A55E58FB274A9820C1ED8BC4 /* libPods-BirdDriver.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BirdDriver.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F85D5BC0821A6E61D47995BF /* Pods-BirdDriver.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BirdDriver.release.xcconfig"; path = "Pods/Target Support Files/Pods-BirdDriver/Pods-BirdDriver.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1156,6 +1159,8 @@
 				907C087421ECC6AC0078EA79 /* BDAboutUsCell.h */,
 				907C087521ECC6AC0078EA79 /* BDAboutUsCell.m */,
 				907C087621ECC6AC0078EA79 /* BDAboutUsCell.xib */,
+				9278ED7A21EDC6FA00CA52C0 /* BDGifRefreshHeadView.h */,
+				9278ED7B21EDC6FA00CA52C0 /* BDGifRefreshHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1469,11 +1474,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BirdDriver/Pods-BirdDriver-resources.sh",
 				"${PODS_ROOT}/IQKeyboardManager/IQKeyboardManager/Resources/IQKeyboardManager.bundle",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
 				"${PODS_ROOT}/TZImagePickerController/TZImagePickerController/TZImagePickerController/TZImagePickerController.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/IQKeyboardManager.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TZImagePickerController.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1521,6 +1528,7 @@
 				904F6F1F21D5EC580071EA89 /* SLAlertView.m in Sources */,
 				904F6F2621D5EC580071EA89 /* HttpRequestParam.m in Sources */,
 				906948C121E87344000D7685 /* UIView+Custom.m in Sources */,
+				9278ED7C21EDC6FA00CA52C0 /* BDGifRefreshHeadView.m in Sources */,
 				908EF23121E58CDD00AA6FD8 /* BDDriverInfoViewController.m in Sources */,
 				904F6F0721D5EC580071EA89 /* MBTimeProgressView.m in Sources */,
 				904F6F9421D5F9E90071EA89 /* UIColor+extend.m in Sources */,
@@ -1753,7 +1761,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHSNY7Y3VJ;
-				GCC_PREFIX_HEADER = "/Users/ganmingqiang/Desktop/BirdDriver/BirdDriver/BirdDriver/BirdDriver-prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/anthony/Desktop/BirdDriver/BirdDriver/BirdDriver-prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"COCOAPODS=1",
@@ -1779,7 +1787,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = PHSNY7Y3VJ;
-				GCC_PREFIX_HEADER = "/Users/ganmingqiang/Desktop/BirdDriver/BirdDriver/BirdDriver/BirdDriver-prefix.pch";
+				GCC_PREFIX_HEADER = "/Users/anthony/Desktop/BirdDriver/BirdDriver/BirdDriver-prefix.pch";
 				INFOPLIST_FILE = BirdDriver/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = (
