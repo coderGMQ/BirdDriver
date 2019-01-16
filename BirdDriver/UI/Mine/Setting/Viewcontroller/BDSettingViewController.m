@@ -111,11 +111,14 @@ static NSString *const _bdAboutUsCell = @"BDAboutUsCell";
         
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             //清楚缓存
-            NSString *filePath =  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-            BOOL isSuccess = [LBClearCacheTool clearCacheWithFilePath:filePath];
-            if (isSuccess) {
-                [[[iToast makeText:@"清除完成"] setGravity:iToastGravityCenter] show];
-            }
+            [[SDImageCache sharedImageCache] cleanDisk];
+            [[[iToast makeText:@"清除完成"] setGravity:iToastGravityCenter] show];
+
+//            NSString *filePath =  [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+//            BOOL isSuccess = [LBClearCacheTool clearCacheWithFilePath:filePath];
+//            if (isSuccess) {
+//                [[[iToast makeText:@"清除完成"] setGravity:iToastGravityCenter] show];
+//            }
         });
     
         
