@@ -20,6 +20,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // 初始化全局变量
     [self initGlobalVariable];
+    NSLog(@"11111");
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     BOOL needShowGuideView = [BDGuideViewController needShowGuideView];
